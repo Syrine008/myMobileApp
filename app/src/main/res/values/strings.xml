@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="welcome_sign_up">Welcome ! \nPlease sign up here !</string>
+    <string name="welcome_sign_in">Welcome ! \nPlease sign in here !</string>
+    <string name="goToSignIn"><u>Already have an account !</u></string>
+    <string name="goToForgetPassword"><u>Forget Your Password ?</u></string>
+
+
+</resources>
