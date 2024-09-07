@@ -75,6 +75,7 @@ public class ProfilActivity extends AppCompatActivity implements NavigationView.
                 startActivity(new Intent(ProfilActivity.this, HomeActivity.class));
             }
             return true;
+
         });
 
         databaseReference.addValueEventListener(new ValueEventListener() {
