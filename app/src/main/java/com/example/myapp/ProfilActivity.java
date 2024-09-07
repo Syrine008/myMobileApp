@@ -127,26 +127,23 @@ public class ProfilActivity extends AppCompatActivity implements NavigationView.
     }
 
 
+    private void navigationDrawerProfile() {
 
-private void navigationDrawerProfile() {
+        navigationView.setNavigationItemSelectedListener(this);
+        navigationView.setCheckedItem(R.id.profile);
+        navigationView.bringToFront();
 
-    navigationView.setNavigationItemSelectedListener(this);
-    navigationView.setCheckedItem(R.id.profile);
-    navigationView.bringToFront();
+        menuIcon.setOnClickListener(v -> {
+            if (drawerLayout.isDrawerVisible(GravityCompat.START)) {
+                drawerLayout.closeDrawer(GravityCompat.START);
+            } else {
+                drawerLayout.openDrawer(GravityCompat.START);
+            }
+        });
 
-    menuIcon.setOnClickListener(v -> {
-        if (drawerLayout.isDrawerVisible(GravityCompat.START)) {
-            drawerLayout.closeDrawer(GravityCompat.START);
-        } else {
-            drawerLayout.openDrawer(GravityCompat.START);
-        }
-    });
+        drawerLayout.setScrimColor(getResources().getColor(R.color.colorApp));
 
-    drawerLayout.setScrimColor(getResources().getColor(R.color.colorApp));
-
-}
-
-
+    }
 
 
     @Override
