@@ -73,6 +73,8 @@ public class ProfilActivity extends AppCompatActivity implements NavigationView.
                 drawerLayout.closeDrawer(GravityCompat.START);
             } else if (item.getItemId() == R.id.home) {
                 startActivity(new Intent(ProfilActivity.this, HomeActivity.class));
+            }else if (item.getItemId() == R.id.ticket) {
+                startActivity(new Intent(ProfilActivity.this, TicketElectrique.class));
             }
             return true;
         });

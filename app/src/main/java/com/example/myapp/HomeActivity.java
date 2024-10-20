@@ -90,6 +90,8 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 drawerLayout.closeDrawer(GravityCompat.START);
             } else if (item.getItemId() == R.id.profile) {
                 startActivity(new Intent(HomeActivity.this, ProfilActivity.class));
+            }else if (item.getItemId() == R.id.ticket) {
+                startActivity(new Intent(HomeActivity.this, TicketElectrique.class));
             }
             return true;
         });
